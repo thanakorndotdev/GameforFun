@@ -15,6 +15,10 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
+<<<<<<< HEAD
     "vite": "^8.0.10"
+=======
+    "vite": "^5.0.0"
+>>>>>>> 1ebdd2ccc4dcb0dc520f402adc1eef4433bbfa26
   }
 }
