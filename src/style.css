@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Sarabun', sans-serif;
+  }
+}
+
+@layer components {
+  .neon-text-blue {
+    color: #00ccff;
+    text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff88;
+  }
+  .neon-text-orange {
+    color: #ff6600;
+    text-shadow: 0 0 10px #ff6600, 0 0 20px #ff660088;
+  }
+  .neon-text-yellow {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc0088;
+  }
+  .neon-text-green {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff8888;
+  }
+  .neon-text-pink {
+    color: #ff4488;
+    text-shadow: 0 0 10px #ff4488, 0 0 20px #ff448888;
+  }
+  .neon-border-blue {
+    border-color: #00ccff;
+    box-shadow: 0 0 8px #00ccff44, inset 0 0 8px #00ccff11;
+  }
+  .btn-neon {
+    @apply font-orbitron font-bold tracking-widest px-8 py-3 rounded-lg border-2 transition-all duration-200 cursor-pointer;
+    @apply hover:scale-105 active:scale-95;
+  }
+  .difficulty-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-orbitron font-bold tracking-wider;
+  }
+  .hud-panel {
+    @apply flex flex-col items-center;
+  }
+  .hud-label {
+    @apply font-orbitron text-[9px] tracking-[3px] text-cyan-700 mb-0.5;
+  }
+  .hud-value {
+    @apply font-orbitron font-bold text-lg neon-text-blue;
+  }
+  .pu-chip {
+    @apply flex flex-col items-center gap-1 px-2 py-1.5 rounded-lg border border-blue-900 bg-blue-950/70;
+  }
+  .overlay-base {
+    @apply absolute inset-0 z-20 flex flex-col items-center justify-center gap-4;
+    @apply backdrop-blur-sm;
+  }
+}
