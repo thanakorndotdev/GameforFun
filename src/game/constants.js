@@ -1,0 +1,9 @@
+export const VW = 480
+export const VH = 720
+export const MAX_LIVES = 3
+export const CHARGE_MAX = 1200  // ms to full charge
+export const CHARGE_CD  = 1600  // ms cooldown after firing
+export const PU_DUR     = 8000  // power-up duration ms
+export const INV_TIME   = 2200  // invincibility after hit ms
+export const FIRE_RATE_NORMAL = 240
+export const FIRE_RATE_MULTI  = 160
